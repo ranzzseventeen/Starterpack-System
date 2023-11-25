@@ -1,9 +1,12 @@
 #include <a_samp>
+#include <Pawn.CMD>
 
 #define RED_E 		"{FF0000}"
+
 //put in the player data
 pStarterpack,
-pData
+
+#define PlayerData pData
 
 //put in the command
 CMD:claim(playerid)
