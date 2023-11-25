@@ -11,7 +11,7 @@ COMMAND:claim(playerid)
 {
   if(pInfo[playerid][pStarterpack]) return SCM(playerid, RED_E, "You have taken the starterpack");
   pInfo[playerid][pStarterpack] = 1;
-  OnPlayerUpdateAccountsPer(playerid, "pStarterpack", pInfo[playerid][pStarterpack]);
+  OnPlayerUpdateAccountsPer(playerid, "starterpack", pInfo[playerid][pStarterpack]);
 	GivePlayerMoneyEx(playerid, 500000, "");
 	pInfo[playerid][pLevel] += 1;
 	SendClienMessage(playerid, "[SUCCEED] {3BBD44}You have successfully picked up the starterpack, worth $5000.00 and 1 level");
