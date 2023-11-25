@@ -9,7 +9,7 @@ pStarterpack,
 #define PlayerData pData
 
 //put in the command
-CMD:claim(playerid)
+COMMAND:claim(playerid)
 {
   if(pData[playerid][pStarterpack]) return SCM(playerid, RED_E, "You have taken the starterpack");
   pData[playerid][pStarterpack] = 1;
